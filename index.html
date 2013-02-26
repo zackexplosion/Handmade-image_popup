@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>handmade popup</title>
+	<link href='http://fonts.googleapis.com/css?family=Julius+Sans+One' rel='stylesheet' type='text/css'>
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	
+	<style>
+	body{font-family: 'Julius Sans One', sans-serif;background:rgb(180, 180, 180);padding:20px}
+	h1{color:#000;font-weigth:bold}
+	img{border:3px solid #999;max-width:250px}
+	#popupbox{display: block;background: rgba(54, 51, 51, 0.53);width: 100%;position: /*absolute*/fixed;z-index: 100;top: 0px;left: 0px;}
+	.add_be_show_images{left: 50%;
+	margin-left: -300px;
+	position: fixed;
+	top: 120px;
+	width: 200px;}
+	.add_be_show_images img{width: 600px;max-width: 800px;;top: 150px;/*border: 10px solid #fff;*/
+	max-height: 600px;-moz-box-shadow: 2px 0px 13px #333;-webkit-box-shadow: 2px 0px 13px #333;box-shadow: 2px 0px 13px #333;}
+	.close_popup{background:#333;color: #FFF;cursor: pointer;height: 18px;left: 50%;margin-left: -300px;padding: 3px 14px;position: fixed;top: 80px;width: 209px;}
+
+	</style>
+</head>
+<body>
+	<h1>Handmade popup</h1>
+	<img src="001.jpg"/>
+	<img src="002.jpg"/>
+	<img src="003.jpg"/>
+	<img src="004.jpg"/>
+	
+	
+<div id="popupbox" style="display:none">
+<div class="add_be_show_images"><!--這裡會用javascript放被顯示的圖片--></div>
+<p class="close_popup">X close me / 關掉圖片放大</p>
+</div>
+	
+<script type="text/javascript" src="ex.js"></script>
+	
+</body>
+</html>
