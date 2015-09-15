@@ -1,21 +1,21 @@
 $(document).ready(function(){
 
-$POPUPBOX_HEIGHT = $(document).height();
-$POPUPBOX = $('#popupbox');
+	$POPUPBOX_HEIGHT = $(document).height();
+	$POPUPBOX = $('#popupbox');
 
-$('img').click(function(e){//·í·Ó¤ù³QÂI¿ïªº®É­Ô
-	$POPUPBOX.fadeIn(100).css({'display':'block','height':$POPUPBOX_HEIGHT});  //Åı­ì¥»³QÁôÂÃªºpopupboxÅã¥Ü¥X¨Ó¡A¨Ã¥B°ª«×µ¥©ó²{¦bdocumentªº°ª«×
-	$POPUP_IMAGE = $(this).attr('src');
-	//console.log($POPUP_IMAGE);   --->debug use
-	//±NÂI¿ïªº¹Ï¤ù¶ë¨ìpopupboxªºadd_be_show_images
-	$('.add_be_show_images').html('<img class="bepopup" src="'+$POPUP_IMAGE+'">');
-	e.stopPropagation(); //°±¤î«_ªw¨Æ¥ó
-});
+	$('img').click(function(e){//ç•¶ç…§ç‰‡è¢«é»é¸çš„æ™‚å€™
+		$POPUPBOX.fadeIn(100).css({'display':'block','height':$POPUPBOX_HEIGHT});  //è®“åŸæœ¬è¢«éš±è—çš„popupboxé¡¯ç¤ºå‡ºä¾†ï¼Œä¸¦ä¸”é«˜åº¦ç­‰æ–¼ç¾åœ¨documentçš„é«˜åº¦
+		$POPUP_IMAGE = $(this).attr('src');
+		//console.log($POPUP_IMAGE);   --->debug use
+		//å°‡é»é¸çš„åœ–ç‰‡å¡åˆ°popupboxçš„add_be_show_images
+		$('.add_be_show_images').html('<img class="bepopup" src="'+$POPUP_IMAGE+'">');
+		e.stopPropagation(); //åœæ­¢å†’æ³¡äº‹ä»¶
+	});
 
 
-$('body, .close_popup').click(function(){
-	$POPUPBOX.hide();
-}); 
-//¤£½×ÂI¿ï"X close me / Ãö±¼¹Ï¤ù©ñ¤j"©Î¬Oºô­¶ªº¬Y­Ó¦a¤è¡A³£¥i¥HÃö±¼³o­Ópopup
+	$('body, .close_popup').click(function(){
+		$POPUPBOX.hide();
+	});
+	//ä¸è«–é»é¸"X close me / é—œæ‰åœ–ç‰‡æ”¾å¤§"æˆ–æ˜¯ç¶²é çš„æŸå€‹åœ°æ–¹ï¼Œéƒ½å¯ä»¥é—œæ‰é€™å€‹popup
 
 });
